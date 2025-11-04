@@ -22,6 +22,8 @@ const lastname = ref('Doe');
 // const fullname = computed(() => {
 //    return `${fistname.value} ${lastname.value}`
 // })
+
+//computed dùng getter và setter
 const fullname = computed({
     //gettter
     get() {
