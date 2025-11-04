@@ -1,6 +1,6 @@
 # tài liệu 
 https://vuejs-course.vercel.app/
-
+youtube.com/watch?v=Vg9n_YRGPIY&list=PLwJIrGynFq9B_BQJZJi-ikWDDkYKVUpM5
 
 ## Single File Component (SFC) là gì?
 - Thay vì tách HTML, CSS, JS ra nhiều file, Vue gom chúng vào chung một file dễ bảo trì và tái sử dụng
