@@ -1,9 +1,11 @@
 <script setup>
   import  SyntaxCompoent   from "./components/Syntax.vue";
+  import  ReactivelyCompoent   from "./components/Reactively.vue";
 </script>
 
 <template>
-   <SyntaxCompoent />
+   <!-- <SyntaxCompoent /> -->
+    <ReactivelyCompoent />
 </template>
 
 <style scoped></style>
