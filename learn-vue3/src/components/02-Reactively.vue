@@ -41,6 +41,7 @@ const increment = async () => {
        - cách dùng ref: 
            - Khi bạn sử dụng ref trong template và thay đổi giá trị của nó, Vue sẽ tự động theo dõi sự thay đổi đó và cập nhật giao diện người dùng 
            - ref có thể chứa các kiểu dữ liệu nguyên thủy (như số, chuỗi, boolean) hoặc các đối tượng phức tạp (như mảng, đối tượng).
+           - ref dùng value để truy cập giá trị 
        - cách dùng reactive: 
             - Tương tự như ref, nhưng thường được sử dụng để tạo các đối tượng phức tạp hơn. Khi bạn sử dụng reactive, Vue sẽ theo ko dùng value để truy cập giá trị bên trong reactive.
             - nếu dữ liệu là kiểu object nên dùng reactive

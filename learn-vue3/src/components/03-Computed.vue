@@ -12,7 +12,7 @@ const isPublished = computed(() => {
     return book.chapters.length > 0 ? "Có" : "Chưa";
 });
 const now = computed(() => {
-    console.log("Computed now re-evaluated");
+    console.log("Computed now re-evaluated"); // chỉ render 1 lần dù add Chaper 
     return new Date().toLocaleString();
 })
 const fistname = ref('John');
