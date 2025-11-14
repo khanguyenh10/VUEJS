@@ -5,8 +5,9 @@ import ComputedComponent from './components/03-Computed.vue'
 // import ClassStyleBindingComponent from './components/ClassStyleBinding.vue'
 // import StyleBindingComponent from './components/05-StyleBinding.vue'
 // import ConditionComponent from './components/06-Condition.vue'
-import List from './components/07-List.vue'
-import TodoList from './pratice/08-TodoList.vue'
+// import List from './components/07-List.vue'
+// import TodoList from './pratice/TodoList.vue'
+import EventHandling from './components/08-EventHandling.vue'
 </script>
 
 <template>
@@ -17,7 +18,8 @@ import TodoList from './pratice/08-TodoList.vue'
   <!-- <StyleBindingComponent /> -->
   <!-- <ConditionComponent /> -->
    <!-- <List/> -->
-   <TodoList/>
+   <!-- <TodoList/> -->
+    <EventHandling/>
 </template>
 
 <style scoped></style>
