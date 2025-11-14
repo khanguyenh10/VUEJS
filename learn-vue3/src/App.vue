@@ -7,7 +7,9 @@ import ComputedComponent from './components/03-Computed.vue'
 // import ConditionComponent from './components/06-Condition.vue'
 // import List from './components/07-List.vue'
 // import TodoList from './pratice/TodoList.vue'
-import EventHandling from './components/08-EventHandling.vue'
+// import EventHandling from './components/08-EventHandling.vue'
+import FormInputBinding  from './components/09-FormInputBinding.vue'
+
 </script>
 
 <template>
@@ -19,7 +21,8 @@ import EventHandling from './components/08-EventHandling.vue'
   <!-- <ConditionComponent /> -->
    <!-- <List/> -->
    <!-- <TodoList/> -->
-    <EventHandling/>
+    <!-- <EventHandling/> -->
+     <FormInputBinding/>
 </template>
 
 <style scoped></style>
