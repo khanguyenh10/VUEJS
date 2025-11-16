@@ -1,5 +1,5 @@
 <script setup>
- import LifeCycleHooks from '../components/10-LifecycleHooks.vue'
+ import LifeCycleHooks from '../lessons/10-LifecycleHooks.vue'
 
 </script>
 

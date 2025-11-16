@@ -1,0 +1,18 @@
+<script setup>
+import ButtonCount from '../components/ButtonCount.vue';
+import ButtonCountCustomEvent from '@/components/ButtonCountCustomEvent.vue';
+import { ref } from 'vue';
+
+const count = ref(0);
+const increaseBy = (number1, number2) =>{
+    count.value = count.value + number1 + number2; // count.value + number = number;
+}
+</script>
+
+<template>
+
+    <h1> Component: {{ count }}</h1>
+     <!-- :init="2" - chuyển giá trị string sang number -->
+     <!-- <button-count  :init="2"/>  -->
+      <button-count-custom-event @increase="count++" @increase-by-two-times="count+=2" @increase-by="increaseBy" />
+</template>
