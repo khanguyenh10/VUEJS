@@ -18,6 +18,12 @@
 <!-- Cách mới -> khuyên dùng -->
 <script setup>
 import { ref, reactive, nextTick } from 'vue'
+
+// Sử dụng ref
+const countRef = ref(0);
+countRef.value++;
+
+// Sử dụng reactive
 const object = reactive({
   count: 0,
   user: {
@@ -47,7 +53,11 @@ const increment = async () => {
             - nếu dữ liệu là kiểu object nên dùng reactive
     nextTick: là một hàm quan trọng trong Vue giúp bạn chờ Vue cập nhật DOM xong rồi mới chạy code tiếp theo.
      -->
+  <h1>Ref</h1>
+  <p >Count: {{ countRef }}</p>
+  <button @click="countRef++">Increment</button>
 
+  <hr/>
   <h1>Reactively</h1>
   <p id="count">Count: {{ object.count }}</p>
   <p>Age: {{ object.user.age }}</p>

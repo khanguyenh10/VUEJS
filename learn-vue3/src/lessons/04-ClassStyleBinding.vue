@@ -2,6 +2,7 @@
 import { ref, reactive, computed} from 'vue'
 const isActive = ref(true);
 const hasError = ref(false);
+
 // const classObject = reactive({
 //     active: true,
 //     'has-error': true
@@ -18,16 +19,18 @@ const changeActive = () => {
 </script>
 
 <template>
-    <h1>ClassStyleBinding</h1>
-    <!-- 
+     <!-- 
       ClassBinding
+      - cú pháp: :class="className"
       - viết class trong style và gán vào class của thẻ HTML
       - gán class động với object 
       - gán class động với array
 
     -->
+    <h1>ClassStyleBinding</h1>
+   
     <div>
-        <!-- <button class="btn" :class="{active: isActive, 'has-error': hasError}">Active </button> -->
+        <button class="btn" :class="{active: isActive, 'has-error': hasError}">Active </button>
         <button @click="changeActive" class="btn" :class="classObject">{{isActive ? 'Active': 'Inactive'}} </button>
         <button @click="changeActive" class="btn" :class="[isActive ? 'active': '', {'has-error': hasError}, 'has-warning']">{{isActive ? 'Active': 'Inactive'}} </button>
     </div>

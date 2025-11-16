@@ -32,6 +32,7 @@ import UseComponent from "../lessons/14-Components.vue";
    <!-- <Watcher /> -->
   <!-- <TemplateRef /> -->
    <!-- <PropsComponent /> -->
+    <ComponentA />
     <UseComponent />
 </template>
 

@@ -10,11 +10,11 @@ const objectOfAttrs = {
   style: 'border: 1px solid #000; padding: 10px;'
 //   disabled: true
 }
-const listString = 'a b c d e';
 const number = 4;
 const convertToId = (str) => str.split(' ').join('-');
 const attributeName = 'href';
 const url = 'https://vuejs.org/';
+const listString = 'a b c d e';
 
 </script>
 <template>
@@ -28,6 +28,9 @@ const url = 'https://vuejs.org/';
     Disabled nút:
       - true : khi có giá trị true, "", 1, ...
       - false : khi có giá trị false, null, undefined, 0, ...
+    Ràng buộc nhiều thuộc tính: v-bind="objectOfAttrs"
+    Đối số động: :[attributeName]="url"
+    Directive là thuộc tính chỉ thị có tiền tố "v-html", "v-bind" , "v-if", "v-for"...
   -->
   <p>Message: {{ msg }}</p>
   <p v-html="rawHtml"></p>

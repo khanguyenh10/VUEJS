@@ -2,6 +2,9 @@
 https://vuejs-course.vercel.app/
 https://youtube.com/watch?v=Vg9n_YRGPIY&list=PLwJIrGynFq9B_BQJZJi-ikWDDkYKVUpM5
 
+# Vue là gì?
+framework Javascript được sử dụng xây dựng giao diện người dùng 
+
 ## Single File Component (SFC) là gì?
 - Thay vì tách HTML, CSS, JS ra nhiều file, Vue gom chúng vào chung một file dễ bảo trì và tái sử dụng
 ```js

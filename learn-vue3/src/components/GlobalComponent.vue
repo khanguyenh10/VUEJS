@@ -1,0 +1,3 @@
+<template>
+    Global Component
+</template>
