@@ -13,10 +13,13 @@ const submit = () => {
   <h1>Event Handling</h1>
   <!--
        click event
-       v-on:click="clickHandler"
-       @click="clickHandler"
-       @click.stop="clickHandler" : ngan chan bubbling
-       @clic.self="clickHandler" : chỉ click trên chính element đó
+        - v-on:click="clickHandler"
+        - @click="clickHandler"
+        - @click.stop="clickHandler" : ngăn chặn bubbling
+        - @clic.self="clickHandler" : chỉ click trên chính element đó
+        - @click.shift="submit" : người dùng nhấn chuột đồng thời giữ phím Shift để submit
+      @submit.prevent="submit" : ngăn chặn hành vi mặc định , có thể dùng .stop kết hợp nếu cần
+      @keyup.enter.alt="submit" : nhấn alt + enter để submit
     -->
   <div>
     <button v-on:click="count++">Thêm 1</button>

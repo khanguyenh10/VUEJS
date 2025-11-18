@@ -40,11 +40,11 @@ const handleInput = (e) =>{
          có thể ràng buộc dữ liệu mong muốn 
             true-value="yes"
             false-value="no" 
-         -->
         <input type="checkbox"  v-model="checked" true-value="yes" false-value="no">
         <p> Mutiple checkbox: {{ checkboxNames }}</p>
         <input type="checkbox" id="a" v-model="checkboxNames" :value="firstOption">
         <label for="a">A</label>
+         -->
          <input type="checkbox" id="b" v-model="checkboxNames" :value="secondOption">
         <label for="b">B</label>
          <input type="checkbox" id="c" v-model="checkboxNames" value="C">

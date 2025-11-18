@@ -48,9 +48,11 @@ const increment = async () => {
            - Khi bạn sử dụng ref trong template và thay đổi giá trị của nó, Vue sẽ tự động theo dõi sự thay đổi đó và cập nhật giao diện người dùng 
            - ref có thể chứa các kiểu dữ liệu nguyên thủy (như số, chuỗi, boolean) hoặc các đối tượng phức tạp (như mảng, đối tượng).
            - ref dùng value để truy cập giá trị 
+           - ref theo dõi toàn bộ value.
        - cách dùng reactive: 
             - Tương tự như ref, nhưng thường được sử dụng để tạo các đối tượng phức tạp hơn. Khi bạn sử dụng reactive, Vue sẽ theo ko dùng value để truy cập giá trị bên trong reactive.
             - nếu dữ liệu là kiểu object nên dùng reactive
+            - reactive chỉ theo dõi thay đổi bên trong mảng hoặc object, ko theo dõi việc thay đổi tham chiếu của chính mảng hoặc object đó.
     nextTick: là một hàm quan trọng trong Vue giúp bạn chờ Vue cập nhật DOM xong rồi mới chạy code tiếp theo.
      -->
   <h1>Ref</h1>

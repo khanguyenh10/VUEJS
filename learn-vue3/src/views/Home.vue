@@ -26,7 +26,7 @@ import UseComponent from "../lessons/14-Components.vue";
   <!-- <ConditionComponent /> -->
   <!-- <List/> -->
   <!-- <TodoList/> -->
-  <!-- <EventHandling/> -->
+  <EventHandling/>
   <!-- <FormInputBinding/> -->
   <!-- <LifecycleHooks /> -->
    <!-- <Watcher /> -->
