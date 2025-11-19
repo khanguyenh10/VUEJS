@@ -14,7 +14,7 @@ import Watcher from "../lessons/11-Watchers.vue"
 import TemplateRef from "../lessons/12-TemplateRef.vue"
 import PropsComponent from "../lessons/13-Props.vue";
 import UseComponent from "../lessons/14-Components.vue";
-
+import UseSlot from "../lessons/15-Slot.vue";
 </script>
 
 <template>
@@ -29,11 +29,11 @@ import UseComponent from "../lessons/14-Components.vue";
   <!-- <EventHandling/> -->
   <!-- <FormInputBinding/> -->
   <!-- <LifecycleHooks /> -->
-   <Watcher />
+   <!-- <Watcher /> -->
   <!-- <TemplateRef /> -->
    <!-- <PropsComponent /> -->
-    <ComponentA />
-    <UseComponent />
+    <!-- <UseComponent /> -->
+    <UseSlot />
 </template>
 
 <style scoped></style>

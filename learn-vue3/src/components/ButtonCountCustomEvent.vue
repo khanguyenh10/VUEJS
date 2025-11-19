@@ -1,4 +1,6 @@
 <template>
+  <!-- gọi trực tiếp-->
+  <button @click="$emit('increase')">Increase</button> 
   <button @click="callFuncIncrease">Increase</button>
   <button @click="callFuncIncreaseByTwoTimes">IncreaseByTwoTimes</button>
   <button @click="callFuncIncreaseBy">IncreaseBy</button>

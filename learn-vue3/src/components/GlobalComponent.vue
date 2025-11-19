@@ -1,3 +1,1 @@
-<template>
-    Global Component
-</template>
+<template>Global component </template>
