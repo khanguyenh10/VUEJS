@@ -24,6 +24,17 @@ const initializeThirdPartyLibrary = (el) => {
 <template>
 
     <h1>Template Ref</h1>
+    <!-- 
+     template ref:
+        - khái niệm: giúp chúng ta tham chiếu đến 1 phần tử DOM cụ thể, hoặc instance của component
+        - sử dụng khi: cần thao tác trực tiếp với DOM như focus, thay đổi style
+        - cú pháp: 
+            - <input ref="inputRef" />
+            - ref trong v-for 
+                - cách 1: ref="itemRefs" -> itemRefs là mảng các phần tử DOM
+                - cách 2: :ref="(el) => { itemRefs[index] = el }" -> gán từng phần tử DOM vào mảng itemRefs
+            - sử dụng với third-party library: :ref="(el) => { initializeThirdPartyLibrary(el) }"
+    -->
      <input type="text" ref="inputRef">
      <ul>
         <!-- <li v-for="(item, index) in list" :key="index" ref="itemRefs" style="opacity: 0;">

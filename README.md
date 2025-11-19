@@ -34,3 +34,8 @@ framework Javascript được sử dụng xây dựng giao diện người dùng
 
 ## Cài Vuejs
 npm create vue@latest
+
+## Lợi ích DOM ảo
+- Hiệu suất cao
+- Quản lý trạng thái dễ dàng
+- tái sử dụng và mô đun

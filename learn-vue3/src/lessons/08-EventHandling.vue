@@ -24,10 +24,10 @@ const submit = () => {
   <div>
     <button v-on:click="count++">Thêm 1</button>
     <button @click="sayHi('A')">Chào A</button>
-    <button @click="sayHi('B')">
+    <div @click="sayHi('B')">
       Chào B
       <button @click.stop="sayHi('C')">Chào C</button>
-    </button>
+    </div>
     <div @click.self="sayHi('D')">
       <button>Chào D</button>
     </div>

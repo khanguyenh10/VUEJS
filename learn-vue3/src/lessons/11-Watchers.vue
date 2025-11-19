@@ -30,7 +30,7 @@ watch(question, async (newQuestion, oldQuestion) => {
         }
     }
 })
-
+// theo dõi 1 cái getter
 watch(() => x.value + y.value, (sum) => {
     console.log("tổng của x và y: " , sum);
 })
@@ -50,9 +50,9 @@ watch(user, (newUser, oldUser) => {
     console.log("User", `${JSON.stringify(newUser)}`);
 },{deep: false, immediate: true}) // deep: false ko cập nhật thay đổi trong nested object, immediately: true, in ra thay đổi ngay lần dùng đầu tiên
 
-
+// nên dùng
 watchEffect(() => {
-    console.log("Giá trị của", `x: ${x.value}, y: ${y.value}`);
+    console.log("Giá trị của", `x: ${x.value}, y: ${y.value}`); // ko cần dùng immediate như trong watch
 })
 
 
@@ -71,15 +71,18 @@ const changeName = () => {
 <template>
 <!-- 
   watcher: theo dõi dữ liệu thay đổi
-     + watch không thể theo dõi thuộc tính của object  
-     + mặc định watch theo dõi theo dạng lazy
-        +  có deep = true: theo dõi dữ liệu trong nested object, 
-        +  immediately = true: theo dõi dữ liệu ngay lần dùng watch, in ra chúng ta trong lần đầu tiên
-     + watchEffect: thay đổi dữ liệu, in ra thay đổi ngay lần đầu dùng, chỉ thấy giá trị mới
+     + theo dõi ref, reactive, computed, getter, mảng
+     + watch không thể theo dõi thuộc tính của object : user.name trực tiếp mà phải dùng getter
+     +  watch theo dõi theo dạng lazy
+        +  có deep = true: để mặc định, theo dõi dữ liệu trong nested object, 
+        +  immediately = true: theo dõi dữ liệu ngay lần đầu dùng watch, in ra chúng ta trong lần đầu tiên
+     + watchEffect: 
+        + thay đổi dữ liệu, in ra thay đổi ngay lần đầu dùng, chỉ thấy giá trị mới không thấy giá trị cũ
+        + nên dùng cho dễ dàng
 -->
     <h1>Watcher</h1>
      <p>Hỏi một câu hỏi có thể trả lời bằng "yes" hoặc "no"</p>
-     <input type="text" v-model="question">
+     <input type="text" v-model="question" :disabled="isLoading">
      <p> {{ answer }} </p>
      <br/>
      <p> X + Y = {{ x}} + {{ y }} </p>
