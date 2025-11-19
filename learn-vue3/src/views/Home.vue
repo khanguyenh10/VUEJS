@@ -15,6 +15,9 @@ import TemplateRef from "../lessons/12-TemplateRef.vue"
 import PropsComponent from "../lessons/13-Props.vue";
 import UseComponent from "../lessons/14-Components.vue";
 import UseSlot from "../lessons/15-Slot.vue";
+import ProvideInject from "../lessons/16-ProvideInject.vue";
+import AsyncComponent from "../lessons/17-AsyncComponent.vue";
+import Composables from "../lessons/18-Composables.vue";
 </script>
 
 <template>
@@ -33,7 +36,9 @@ import UseSlot from "../lessons/15-Slot.vue";
   <!-- <TemplateRef /> -->
    <!-- <PropsComponent /> -->
     <!-- <UseComponent /> -->
-    <UseSlot />
+    <!-- <UseSlot /> -->
+    <!-- <ProvideInject /> -->
+    <Composables />
 </template>
 
 <style scoped></style>
